@@ -6,6 +6,7 @@
 # Build image and add a descriptive tag
 docker build --tag=devopsmicroservices
 
+
 # Step 2: 
 # List docker images
 docker image ls
