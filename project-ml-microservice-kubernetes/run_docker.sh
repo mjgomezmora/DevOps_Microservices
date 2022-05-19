@@ -13,4 +13,5 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run -p 8000:80 -it devopsmicroservices bash
+sudo /home/ec2-user/.devops/bin/python3 app.py
+docker run -it devopsmicroservices bash
