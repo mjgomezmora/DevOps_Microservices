@@ -17,5 +17,5 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward pod/devopsmicroservices-app-6994b64c66-g2szc --address 0.0.0.0 8080
+kubectl port-forward pod/devopsmicroservices-app-6994b64c66-g2szc --address 0.0.0.0 8080:80
 
