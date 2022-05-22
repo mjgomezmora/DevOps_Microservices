@@ -1,1 +1,3 @@
-<paste log output from Kubernetes-mediated prediction, here>
+devopsmicroservices-app-6994b64c66-g2szc   1/1     Running   2 (7m58s ago)   78m
+Forwarding from 0.0.0.0:8080 -> 80
+Handling connection for 8080
