@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/python:3.6.7-stretch
+      - image: circleci/python:3.7.10-stretch
     working_directory: ~/
     steps:
       - checkout
