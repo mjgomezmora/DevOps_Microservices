@@ -5,16 +5,18 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: python:3.7.3-stretch
+      - image: python:3.7.10-strech
     working_directory: ~/repo
     steps:
       - checkout
       - restore_cache:
           keys:
             - v1-dependencies-{{ checksum "requirements.txt" }}
+            # fallback to using the latest cache if no exact match is found
+            - v1-dependencies-
       - run:
           name: install dependencies
-          command: 
+          command: |
             python3 -m venv venv
             . venv/bin/activate
             make install
